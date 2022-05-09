@@ -21,8 +21,8 @@ Vue.use(VueRouter)
       path:"/coursedetail",
       name:"CourseDetail",
       //按需加载
-      
-      component:CourseDetail
+      component : ()=>import("../views/CourseDetail/CourseDetail.vue")
+      //component:CourseDetail
     },
     {
       path:"/login",
