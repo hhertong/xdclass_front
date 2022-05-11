@@ -1,13 +1,13 @@
 <template>
-  <!--首页轮播图-->
-  <!-- <home-banner></home-banner>
-    
-  <video-list> </video-list>-->
+ <div>
+        <!--首页轮播图-->
+        <home-banner :banners = "banners" ></home-banner>
+            
+        <!-- <video-list> </video-list>-->
 
-  <common-footer></common-footer>
+        <common-footer></common-footer>
+  </div>
 </template>
-
-
 
 
 <script>
@@ -38,6 +38,7 @@ export default {
       try {
         const result = await getBanner();
         console.log(result);
+        console.log(result.data.code == 0)
         if (result.data.code == 0) {
           this.banners = result.data.data;
         }
@@ -67,5 +68,5 @@ export default {
 </script>
 
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 </style>
