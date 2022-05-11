@@ -1,11 +1,11 @@
 <template>
- <div>
-        <!--首页轮播图-->
-        <home-banner :banners = "banners" ></home-banner>
-            
-        <!-- <video-list> </video-list>-->
-
-        <common-footer></common-footer>
+  <div>
+    <!-- 轮播图组件 -->
+    <home-banner :banners="banners"></home-banner>
+    <!-- 视频列表组件 -->
+    <video-list :videoList="videoList"></video-list>
+    <!-- 底部导航栏组件 -->
+    <common-footer></common-footer>
   </div>
 </template>
 
@@ -67,6 +67,4 @@ export default {
 };
 </script>
 
-
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
